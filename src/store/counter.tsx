@@ -6,7 +6,7 @@ export class CounterStore {
 
 
   @action add = () => {
-    this.counter = this.counter + 1;
+    this.counter = this.counter + 2;
   }
 
   @action substract = () => {
