@@ -7,10 +7,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import counterStore from './store/counter';
+import gamesStore from './store/gamesStore';
 
 const stores = {
-  counterStore
+  gamesStore
 };
 
 ReactDOM.render(

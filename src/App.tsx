@@ -5,30 +5,23 @@ import './App.css';
 
 
 interface MyProps {
-  counterStore?: any
+  gamesStore?: any
 }
 
 interface MyState {}
 
-@inject('counterStore')
+@inject('gamesStore')
 @observer
 class App extends Component <MyProps, MyState>  {
 
-  add = () => {
-    this.props.counterStore.add();
-  }
-  
-  substract = () => {
-    this.props.counterStore.substract();
+  componentDidMount() {
+    //this.props.gamesStore.fetchGames();
   }
 
   render() {
     return (
       <div className="App">
-        <h1>HAHA</h1>
-        <button onClick={this.add}>+1</button>
-        <span>{this.props.counterStore.counter}</span>
-        <button onClick={this.substract}>-1</button>
+        <h1>test</h1>
       </div>
     );
   }
